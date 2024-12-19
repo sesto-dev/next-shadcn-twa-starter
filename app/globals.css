@@ -85,31 +85,24 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply box-border bg-background text-foreground;
-  }
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
 }
 
-@layer utilities {
-  .min-h-screen {
-    min-height: 100vh; /* Fallback */
-    min-height: 100dvh;
-  }
-  .h-screen {
-    height: 100vh; /* Fallback */
-    height: 100dvh;
-  }
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
   }
 }

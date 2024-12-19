@@ -1,66 +1,42 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/9113740/201498864-2a900c64-d88f-4ed4-b5cf-770bcb57e1f5.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/9113740/201498152-b171abb8-9225-487a-821c-6ff49ee48579.png">
-</picture>
+## 👋 Introduction
 
-<div align="center"><strong>Next.js 14 Admin Dashboard Starter Template With Shadcn-ui</strong></div>
-<div align="center">Built with the Next.js App Router</div>
-<br />
-<div align="center">
-<a href="https://next-shadcn-dashboard-starter.vercel.app">View Demo</a>
-<span>
-</div>
+This is the repository for my YouTube tutorial on how to convert a Next.js, Tailwind CSS and shadcn/ui project to a TWA ( Trusted Web Activity ) in order to publish it on Google Play as an app.
 
-## Overview
+## [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsesto-dev%2Fnext-shadcn-twa-starter)
 
-This is a starter template using the following stack:
+You can use the button above to clone the repo and deploy it on Vercel simultaneously.
 
-- Framework - [Next.js 14](https://nextjs.org/13)
-- Language - [TypeScript](https://www.typescriptlang.org)
-- Styling - [Tailwind CSS](https://tailwindcss.com)
-- Components - [Shadcn-ui](https://ui.shadcn.com)
-- Schema Validations - [Zod](https://zod.dev)
-- State Management - [Zustand](https://zustand-demo.pmnd.rs)
-- Search params state manager - [Nuqs](https://nuqs.47ng.com/)
-- Auth - [Auth.js](https://authjs.dev/)
-- Tables - [Tanstack Tables](https://ui.shadcn.com/docs/components/data-table)
-- Forms - [React Hook Form](https://ui.shadcn.com/docs/components/form)
-- Command+k interface - [kbar](https://kbar.vercel.app/)
-- Linting - [ESLint](https://eslint.org)
-- Pre-commit Hooks - [Husky](https://typicode.github.io/husky/)
-- Formatting - [Prettier](https://prettier.io)
+## 🥂 Features
 
-_If you are looking for a React admin dashboard starter, here is the [repo](https://github.com/Kiranism/react-shadcn-dashboard-starter)._
+- [x] [**Next.js 14**](https://nextjs.org) App Router and React Server Components.
+- [x] [**TailwindCSS**](https://tailwindcss.com/) for utility-first CSS.
+- [x] UI built with [**Radix**](https://www.radix-ui.com/) and stunning UI components, all thanks to [**shadcn/ui**](https://ui.shadcn.com/).
+- [x] PWA using Serwist.
 
-## Pages
+## 🏃‍♂️ Getting Started Locally
 
-| Pages                                                                             | Specifications                                                                                                                      |
-| :-------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| [Signup](https://next-shadcn-dashboard-starter.vercel.app/)                       | Authentication with **NextAuth** supports Social logins and email logins (Enter dummy email for demo).                              |
-| [Dashboard](https://next-shadcn-dashboard-starter.vercel.app/app)                 | Cards with recharts graphs for analytics.                                                                                           |
-| [Employee](https://next-shadcn-dashboard-starter.vercel.app/app/employee)         | Tanstack tables with server side searching, filter, pagination by Nuqs which is a Type-safe search params state manager in nextjs). |
-| [Employee/new](https://next-shadcn-dashboard-starter.vercel.app/app/employee/new) | A Employee Form with shadcn form (react-hook-form + zod).                                                                           |
-| [Product](https://next-shadcn-dashboard-starter.vercel.app/app/product)           | Tanstack tables with server side searching, filter, pagination by Nuqs which is a Type-safe search params state manager in nextjs   |
-| [Product/new](https://next-shadcn-dashboard-starter.vercel.app/app/product/new)   | A Product Form with shadcn form (react-hook-form + zod).                                                                            |
-| [Profile](https://next-shadcn-dashboard-starter.vercel.app/app/profile)           | Mutistep dynamic forms using react-hook-form and zod for form validation.                                                           |
-| [Kanban Board](https://next-shadcn-dashboard-starter.vercel.app/app/kanban)       | A Drag n Drop task management board with dnd-kit and zustand to persist state locally.                                              |
-| [Not Found](https://next-shadcn-dashboard-starter.vercel.app/app/notfound)        | Not Found Page Added in the root level                                                                                              |
-| -                                                                                 | -                                                                                                                                   |
+Clone the repository.
 
-## Getting Started
+```bash
+git clone https://github.com/sesto-dev/next-shadcn-twa-starter
+```
 
-Follow these steps to clone the repository and start the development server:
+Navigate to each folder in the `apps` folder and and set the variables.
 
-- `git clone https://github.com/Kiranism/next-shadcn-dashboard-starter.git`
-- `npm install`
-- Create a `.env.local` file by copying the example environment file:
-  `cp env.example.txt .env.local`
-- Add the required environment variables to the `.env.local` file.
-- `npm run dev`
+```sh
+cp .env.example .env
+```
 
-You should now be able to access the application at http://localhost:3000.
+Get all dependencies sorted.
 
-> [!WARNING]  
-> After cloning or forking the repository, be cautious when pulling or syncing with the latest changes, as this may result in breaking conflicts.
+```sh
+bun install
+```
 
-Cheers! 🥂
+then
+
+```sh
+bun run dev
+```
+
+Created by [sesto-dev](https://github.com/sesto-dev). Cheers! 🥂

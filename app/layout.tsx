@@ -1,4 +1,3 @@
-import { auth } from '@/auth';
 import Providers from '@/components/layout/providers';
 import { Toaster } from '@/components/ui/sonner';
 import NextTopLoader from 'nextjs-toploader';
@@ -55,12 +54,11 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const session = await auth();
   return (
     <html suppressHydrationWarning={true}>
-      <body className={'overflow-hidden'}>
+      <body className="antialiased">
         <NextTopLoader showSpinner={false} />
-        <Providers session={session}>
+        <Providers>
           <Toaster />
           {children}
         </Providers>
