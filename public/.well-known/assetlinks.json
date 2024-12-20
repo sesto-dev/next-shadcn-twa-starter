@@ -3,15 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "app.sesto-dev.next-shadcn-twa.twa",
-      "sha256_cert_fingerprints": []
-    }
-  },
-  {
-    "relation": ["check_validation"],
-    "target": {
-      "namespace": "cafebazaar_twa",
-      "package_name": "app.sesto-dev.next-shadcn-twa.twa"
+      "package_name": "app.vercel.next_shadcn_twa_starter.twa"
     }
   }
 ]
